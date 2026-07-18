@@ -13,7 +13,8 @@ The project subdomains are unlisted, not access-controlled. Anyone who knows or 
 
 ## Root deployment status
 
-- Redesigned landing page published as Sites version 2 from commit `0c01fd8`.
-- Sites access policy refreshed to public revision 3.
-- Direct browser verification still returns `You do not have permission to visit this site` on the root, `www`, and underlying Sites URL.
-- Prepared fallback: publish the same static build with GitHub Pages and point the root DNS there once the `daavidrowan-lang` GitHub browser session is authenticated.
+- GitHub repository: `https://github.com/daavidrowan-lang/daavidrowan-lang.github.io`.
+- GitHub Pages deployment is live from the `main` branch and serves the redesigned landing page.
+- The apex DNS uses GitHub Pages' four A records; the authoritative `www` CNAME points to `daavidrowan-lang.github.io`.
+- HTTP verification returns `200`; GitHub is still issuing the custom-domain TLS certificate before HTTPS can be enforced.
+- The former Sites deployment remains inaccessible and is no longer the root-domain hosting route.
