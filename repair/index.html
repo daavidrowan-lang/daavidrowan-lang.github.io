@@ -7,28 +7,36 @@
     <meta name="description" content="Focused React, TypeScript, and C#/.NET web-app diagnostics and repairs by David Rowan." />
     <title>David Rowan — Web App Repair</title>
     <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header">
       <a class="wordmark" href="#top">David Rowan</a>
-      <a class="small-link" href="mailto:daavidrowan@gmail.com?subject=Web%20app%20repair">Email me</a>
+      <nav aria-label="Page navigation">
+        <a href="#process">Process</a>
+        <a href="#fit">Fit</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="small-link" href="#brief">Describe the problem</a>
     </header>
 
-    <main id="top">
-      <section class="hero">
+    <main id="main">
+      <section class="hero" id="top">
         <p class="eyebrow">React · TypeScript · C#/.NET</p>
         <h1>Your web app is close.<br />I help get it unstuck.</h1>
         <p class="lede">Focused diagnostics and fixed-scope repairs for existing web apps: stubborn bugs, broken user flows, mobile UX problems, test failures, and launch blockers.</p>
         <div class="actions">
-          <a class="button" href="mailto:daavidrowan@gmail.com?subject=15-minute%20web%20app%20triage&amp;body=Hi%20David%2C%0A%0AThe%20app%20is%3A%0AThe%20problem%20is%3A%0ARepo%2Fdemo%20link%3A%0ADeadline%3A">Request a free 15-minute triage</a>
+          <a class="button" href="#brief">Request a free fit check</a>
           <a class="text-link" href="#offer">See the offer ↓</a>
         </div>
+        <p class="microcopy">Remote and asynchronous by default. Start with one clearly defined problem.</p>
       </section>
 
       <section class="proof" aria-label="What you receive">
-        <div><strong>1 business day</strong><span>for the written diagnostic</span></div>
+        <div><strong>1 business day</strong><span>target for the written diagnostic after access is available</span></div>
         <div><strong>Fixed scope</strong><span>before repair work starts</span></div>
-        <div><strong>No rewrite pitch</strong><span>when a repair is enough</span></div>
+        <div><strong>Quick iterations</strong><span>for agreed adjustments after delivery</span></div>
       </section>
 
       <section id="offer" class="section two-column">
@@ -38,13 +46,23 @@
         </div>
         <div>
           <p>I reproduce the problem, trace the likely cause, assess the surrounding risk, and give you a short repair plan with a fixed quote.</p>
-          <ul>
+          <ul class="check-list">
             <li>One clearly defined web-app problem</li>
             <li>Reproduction notes and root-cause assessment</li>
             <li>Prioritized repair plan and verification checklist</li>
             <li>The full $95 is credited if you hire me for the repair</li>
           </ul>
-          <p class="muted">Typical fixed-scope repairs start at $350. I confirm price, access, boundaries, and acceptance criteria in writing first.</p>
+          <p class="muted">Typical fixed-scope repairs start at $350. Price, access, boundaries, acceptance criteria, and handling of sensitive data are confirmed in writing first.</p>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <p class="eyebrow">A low-friction process</p>
+        <h2>Three steps from symptom to verified fix</h2>
+        <div class="process-grid">
+          <article><b>01</b><h3>Fit check</h3><p>Send the symptom, app link, and deadline. I reply with whether it fits and what access would be needed.</p></article>
+          <article><b>02</b><h3>Diagnostic</h3><p>I reproduce the issue, isolate likely causes, document risk, and propose acceptance criteria before repair work.</p></article>
+          <article><b>03</b><h3>Repair and verify</h3><p>For an accepted quote, I implement the scoped change, run relevant checks, and make quick agreed adjustments.</p></article>
         </div>
       </section>
 
@@ -57,17 +75,47 @@
         </div>
       </section>
 
-      <section class="section two-column">
+      <section class="section" id="fit">
+        <p class="eyebrow">Fit boundaries</p>
+        <h2>A good match is narrow enough to verify</h2>
+        <div class="fit-boundaries">
+          <article>
+            <h3>Good fit</h3>
+            <ul class="check-list"><li>A reproducible bug or broken user flow</li><li>A mobile or accessibility issue with clear impact</li><li>Regression tests around risky existing behavior</li><li>A contained React, TypeScript, or .NET modernization step</li></ul>
+          </article>
+          <article class="not-fit">
+            <h3>Usually not a fit</h3>
+            <ul><li>An undefined “build the whole startup” request</li><li>Work that requires unsupported access or unsafe handling of production secrets</li><li>Guaranteed business, security, medical, or legal outcomes</li><li>Open-ended support without a written scope</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section brief-section" id="brief">
         <div>
-          <p class="eyebrow">Good fit</p>
-          <h2>Small, consequential problems</h2>
+          <p class="eyebrow">Free fit check</p>
+          <h2>Turn the problem into a useful first message</h2>
+          <p class="muted">This form does not upload or store anything. It prepares text in your browser for an email to David.</p>
         </div>
-        <div class="fit-grid">
-          <p>“The app builds, but the real browser flow is broken.”</p>
-          <p>“Our old React screen needs a safe modernization path.”</p>
-          <p>“Mobile users are getting stuck or missing key actions.”</p>
-          <p>“We need tests around this before touching it.”</p>
-        </div>
+        <form id="brief-form">
+          <label>App or product name <input name="app" autocomplete="organization" placeholder="e.g. customer portal" /></label>
+          <label>What is broken? <textarea name="problem" required rows="4" placeholder="What happens, what should happen, and who is affected?"></textarea></label>
+          <label>Demo or repository link <input name="url" type="url" placeholder="https://" /></label>
+          <label>Deadline or urgency <input name="deadline" placeholder="e.g. before Friday's launch" /></label>
+          <div class="form-actions">
+            <button class="button" type="submit">Prepare email</button>
+            <button class="button secondary-button" id="copy-brief" type="button">Copy brief</button>
+          </div>
+          <p id="brief-status" class="form-status" role="status"></p>
+        </form>
+      </section>
+
+      <section class="section faq" id="faq">
+        <p class="eyebrow">Common questions</p>
+        <h2>What happens before any repair starts?</h2>
+        <details><summary>Do I need to share production credentials?</summary><p>No. Start with the least access needed to reproduce the issue. Secrets should stay in your own approved secret-management system and can be added by you when necessary.</p></details>
+        <details><summary>What if the diagnostic shows the repair is larger?</summary><p>You receive the findings and a prioritized path. No repair begins until the scope, price, risks, and acceptance criteria are agreed in writing.</p></details>
+        <details><summary>Can you work remotely?</summary><p>Yes. The default workflow is remote and asynchronous, using written reproduction steps, repository access, and short review loops.</p></details>
+        <details><summary>Are further adjustments included?</summary><p>Quick iterations are welcome for adjustments inside the agreed acceptance criteria. A materially different request is scoped separately before work continues.</p></details>
       </section>
 
       <section class="cta">

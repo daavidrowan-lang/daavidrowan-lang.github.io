@@ -40,13 +40,32 @@
     <section class="opportunities section" id="opportunities">
       <div class="section-heading">
         <div><span class="kicker">ÉLŐ MINTA</span><h2>Mai lehetőségek</h2></div>
-        <p id="updated-at">Adatok betöltése…</p>
+        <div class="data-status">
+          <p id="updated-at">Adatok betöltése…</p>
+          <p id="freshness-status" role="status">Frissesség ellenőrzése…</p>
+        </div>
+      </div>
+      <div class="opportunity-tools">
+        <label class="search-field">
+          Keresés a címben vagy ajánlatkérőben
+          <input id="opportunity-search" type="search" placeholder="pl. tető, út, Pécs" autocomplete="off">
+        </label>
+        <label class="sort-field">
+          Rendezés
+          <select id="opportunity-sort">
+            <option value="score">Legjobb egyezés</option>
+            <option value="deadline">Legközelebbi határidő</option>
+            <option value="value">Legnagyobb ismert érték</option>
+          </select>
+        </label>
       </div>
       <div class="filters" role="group" aria-label="Lehetőségek szűrése">
-        <button class="filter active" data-filter="all">Mind</button>
-        <button class="filter" data-filter="high">65+ pont</button>
-        <button class="filter" data-filter="deadline">14 napon belül</button>
+        <button class="filter active" data-filter="all" aria-pressed="true">Mind</button>
+        <button class="filter" data-filter="high" aria-pressed="false">65+ pont</button>
+        <button class="filter" data-filter="deadline" aria-pressed="false">14 napon belül</button>
+        <button id="reset-filters" class="reset-filters" type="button" hidden>Alaphelyzet</button>
       </div>
+      <p id="results-summary" class="results-summary" aria-live="polite"></p>
       <div id="opportunity-list" class="opportunity-list" aria-live="polite">
         <div class="loading">Hivatalos kiírások betöltése…</div>
       </div>
