@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="TenderFit HU: magyar közbeszerzések érthető, cégedre szabott előszűrése.">
+  <meta property="og:title" content="TenderFit HU — ingyenes visszajelzési béta">
+  <meta property="og:description" content="Friss magyar közbeszerzések átlátható előszűrése építőipari és épületgépészeti KKV-knak.">
+  <title>TenderFit HU — Ne olvass el minden kiírást</title>
+  <link rel="stylesheet" href="./styles.css?v=feedback-beta-5">
+  <script type="module" src="./app.js?v=feedback-beta-5"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="TenderFit HU főoldal"><span>TF</span>TenderFit HU <em>beta</em></a>
+    <a class="header-cta" href="#feedback">Visszajelzést küldök</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow">INGYENES VISSZAJELZÉSI BÉTA · ÉPÍTŐIPARI KKV-KNAK</div>
+      <h1>Ne olvass el minden kiírást.<br><mark>Csak azt, ami neked való.</mark></h1>
+      <p class="hero-copy">A TenderFit a hivatalos kiírásokat naponta átnézi, rangsorolja, és megmutatja, miért lehet érdekes a cégednek.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#opportunities">Mutasd a mai találatokat</a>
+        <a class="button secondary" href="#how">Hogyan működik?</a>
+      </div>
+      <ul class="trust-list" aria-label="Fő előnyök">
+        <li>Hivatalos forrás</li><li>Átlátható pontozás</li><li>Ingyenes béta</li>
+      </ul>
+    </section>
+
+    <section class="proof-strip" aria-label="Termék statisztika">
+      <div><strong id="source-count">—</strong><span>friss kiírás vizsgálva</span></div>
+      <div><strong id="match-count">—</strong><span>aktív találat</span></div>
+      <div><strong>0 Ft</strong><span>a béta alatt</span></div>
+    </section>
+
+    <section class="opportunities section" id="opportunities">
+      <div class="section-heading">
+        <div><span class="kicker">ÉLŐ MINTA</span><h2>Mai lehetőségek</h2></div>
+        <p id="updated-at">Adatok betöltése…</p>
+      </div>
+      <div class="filters" role="group" aria-label="Lehetőségek szűrése">
+        <button class="filter active" data-filter="all">Mind</button>
+        <button class="filter" data-filter="high">65+ pont</button>
+        <button class="filter" data-filter="deadline">14 napon belül</button>
+      </div>
+      <div id="opportunity-list" class="opportunity-list" aria-live="polite">
+        <div class="loading">Hivatalos kiírások betöltése…</div>
+      </div>
+      <p class="disclaimer">A pontszám relevanciajelzés, nem jogosultsági vagy jogi vélemény. Döntés előtt mindig ellenőrizd a hivatalos dokumentációt.</p>
+    </section>
+
+    <section class="how section" id="how">
+      <span class="kicker">NAPI 5 PERC, NEM 2 ÓRA</span>
+      <h2>Három lépésben kapsz döntési alapot</h2>
+      <div class="steps">
+        <article><b>01</b><h3>Mondd el, mivel foglalkoztok</h3><p>Szakág, régió, vállalható munkaméret és fontos kizáró feltételek.</p></article>
+        <article><b>02</b><h3>Mi átnézzük a forrásokat</h3><p>A kiírásokat egységesítjük, szűrjük és minden állítást a forráshoz kötünk.</p></article>
+        <article><b>03</b><h3>Csak a lényeg érkezik</h3><p>Rövid indoklás, határidő és közvetlen link a hivatalos hirdetményhez.</p></article>
+      </div>
+    </section>
+
+    <section class="early-access section" id="feedback">
+      <div>
+        <span class="kicker light">SEGÍTS JOBBÁ TENNI</span>
+        <h2>Próbáld ki ingyen, és mondd el, mi hiányzik</h2>
+        <p>Ez egy korai, ingyenes termékkutatási béta. Ha megírod a szakágadat és a releváns megyéket, készítünk egy személyre szabott mintalistát. Cserébe csak őszinte visszajelzést kérünk.</p>
+      </div>
+      <div class="feedback-card">
+        <h3>Három kérdés érdekel</h3>
+        <ol><li>Milyen munkákat kerestek?</li><li>Mely megyék relevánsak?</li><li>Melyik találat volt hasznos vagy téves?</li></ol>
+        <a class="button submit" href="mailto:daavidrowan@gmail.com?subject=TenderFit%20HU%20b%C3%A9ta%20visszajelz%C3%A9s&body=Szak%C3%A1g%3A%0ARelev%C3%A1ns%20megy%C3%A9k%3A%0AHasznos%20vagy%20t%C3%A9ves%20tal%C3%A1lat%3A">Visszajelzést küldök e-mailben</a>
+        <p class="privacy-note">Az oldal nem kér fizetést, nem használ analitikai vagy marketing sütiket, és nem tárol feliratkozási adatokat. Az e-mailt kizárólag a béta visszajelzéséhez és megválaszolásához használjuk.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="brand footer-brand"><span>TF</span>TenderFit HU</div><p>Hivatalos adatokból, érthetően. Nem közbeszerzési tanácsadás.</p><p>Kapcsolat: <a href="mailto:daavidrowan@gmail.com">daavidrowan@gmail.com</a></p></footer>
+
+  <dialog id="detail-dialog">
+    <button class="dialog-close" aria-label="Bezárás">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+</body>
+</html>

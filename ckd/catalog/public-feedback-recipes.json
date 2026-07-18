@@ -1,0 +1,1931 @@
+{
+  "generatedAt": "2026-07-12T09:46:53.015Z",
+  "source": "02 Recipes/03 Tools (public feedback subset)",
+  "legalStatus": "License/provenance review required before public release.",
+  "recipes": [
+    {
+      "id": "155",
+      "recipeGuid": "7e2c4045-1ae1-40bf-9980-7aaad20a84df",
+      "name": "Ginger tofu with mushrooms",
+      "imageId": "4f1ecd3d-4171-42cd-ba97-e07c6bed1f12",
+      "imagePath": "/images/4f1ecd3d-4171-42cd-ba97-e07c6bed1f12.jpg",
+      "description": "A stir-fry like this one meets all your veggie needs and is easy to knock up after work",
+      "mealTypes": [
+        "Lunch",
+        "Dinner"
+      ],
+      "instructions": [
+        "Heat the oil in a wok over medium-high heat. Stir-fry the onion and garlic for 2 to 3 minutes or until just soft. Add the ginger and tofu. Stir-fry for 3 minutes.",
+        "Add the mushrooms, soy sauce and stir-fry sauce. Stir-fry for 2 minutes. Add the gai lan. Stir-fry 1 to 2 minutes or until gai lan is just tender. Remove from heat.",
+        "Meanwhile, place the noodles in a heatproof bowl. Cover with boiling water. Set aside for 2 to 3 minutes or until heated through. Using a fork, separate the noodles. Drain. Serve."
+      ],
+      "tags": [
+        "Kosher",
+        "Halal",
+        "Ovo-Vegetarian",
+        "Lacto-Vegetarian",
+        "Lacto-Ovo Vegetarian",
+        "Pescetarians",
+        "Pollotarian",
+        "Pollo-pescetarian",
+        "Processed Food Level: 4"
+      ],
+      "allergens": [
+        "Gluten",
+        "Soybeans",
+        "Garlic/onion",
+        "Check packaging",
+        "Other",
+        "(Avoid)Mushrooms",
+        "(Avoid)Soybeans",
+        "(Avoid)Garlic(Fresh)",
+        "(Avoid)Onion(Fresh)"
+      ],
+      "source": "www.allrecipes.com",
+      "prepMinutes": 13,
+      "cookMinutes": 10,
+      "readyInMinutes": 23,
+      "ingredients": [
+        {
+          "description": "vegetable oil",
+          "quantity": 1,
+          "unit": "tsp",
+          "grams": 4.54166666666667,
+          "usdaCode": "04582",
+          "undividable": false
+        },
+        {
+          "description": "onion, thinly sliced",
+          "quantity": 1,
+          "unit": "pcs",
+          "grams": 120,
+          "usdaCode": "11282",
+          "undividable": false
+        },
+        {
+          "description": "garlic, sliced",
+          "quantity": 1,
+          "unit": "clove",
+          "grams": 3,
+          "usdaCode": "11215",
+          "undividable": false
+        },
+        {
+          "description": "ginger, peeled, cut into thin matchsticks",
+          "quantity": 1,
+          "unit": "cm",
+          "grams": 5,
+          "usdaCode": "11216",
+          "undividable": false
+        },
+        {
+          "description": "firm tofu, cut into 3cm squares",
+          "quantity": 1,
+          "unit": "oz",
+          "grams": 28.3495,
+          "usdaCode": "16126",
+          "undividable": false
+        },
+        {
+          "description": "brown mushrooms, halved",
+          "quantity": 1,
+          "unit": "pcs",
+          "grams": 30,
+          "usdaCode": "11260",
+          "undividable": false
+        },
+        {
+          "description": "enoki mushrooms, trimmed",
+          "quantity": 1,
+          "unit": "oz",
+          "grams": 28.3495,
+          "usdaCode": "11950",
+          "undividable": false
+        },
+        {
+          "description": "light soy sauce",
+          "quantity": 1,
+          "unit": "tbsp",
+          "grams": 14.2,
+          "usdaCode": "16424",
+          "undividable": false
+        },
+        {
+          "description": "choy sum, chopped",
+          "quantity": 1,
+          "unit": "pcs",
+          "grams": 100,
+          "usdaCode": "11116",
+          "undividable": false
+        },
+        {
+          "description": "udon noodles",
+          "quantity": 4,
+          "unit": "oz",
+          "grams": 113.398,
+          "usdaCode": "20116",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 561,
+        "sodiumMg": 2674,
+        "potassiumMg": 935,
+        "phosphorusMg": 282,
+        "proteinG": 22,
+        "carbohydrateG": 104,
+        "fatG": 7,
+        "additional": {
+          "waterG": 305.357,
+          "ashG": 8.66,
+          "fiberG": 9.499,
+          "sugarG": 7.28,
+          "calciumMg": 227.054,
+          "ironMg": 3.754,
+          "magnesiumMg": 93.175,
+          "zincMg": 1.644,
+          "copperMg": 0.444,
+          "manganeseMg": 1.274,
+          "seleniumMcg": 17.264,
+          "vitaminCMg": 55.753,
+          "thiaminMg": 0.328,
+          "riboflavinMg": 0.366,
+          "niacinMg": 4.956,
+          "pantothenicAcidMg": 1.744,
+          "vitaminB6Mg": 0.542,
+          "folateTotalMcg": 135.658,
+          "folicAcidMcg": 0,
+          "foodFolateMcg": 135.658,
+          "folateDfeMcg": 135.658,
+          "cholineMg": 46.918,
+          "vitaminB12Mcg": 0.012,
+          "vitaminAIu": 4470.67,
+          "vitaminARaeMcg": 223,
+          "retinolMcg": 0,
+          "alphaCaroteneMcg": 1,
+          "betaCaroteneMcg": 2682.35,
+          "betaCryptoxanthinMcg": 0,
+          "lycopeneMcg": 0,
+          "luteinZeaxanthinMcg": 45.28,
+          "vitaminEMg": 0.989,
+          "vitaminDMcg": 0.088,
+          "vitaminDIu": 3.517,
+          "vitaminKMcg": 49.955,
+          "saturatedFatG": 0.806,
+          "monounsaturatedFatG": 3.346,
+          "polyunsaturatedFatG": 2.344,
+          "cholesterolMg": 0
+        }
+      }
+    },
+    {
+      "id": "406",
+      "recipeGuid": "4db3cb79-faf9-4c79-90b3-b6de95c53cab",
+      "name": "Salmon and bulgur wheat pilaf",
+      "imageId": "313cac3e-889a-47c5-9abc-3a84d9123196",
+      "imagePath": "/images/313cac3e-889a-47c5-9abc-3a84d9123196.jpg",
+      "description": "Bulgur wheat is healthy and filling and a nice alternative to rice or couscous. This salmon pilaf flavoured with fresh herbs is a healthy quick supper.",
+      "mealTypes": [
+        "Lunch",
+        "Dinner"
+      ],
+      "instructions": [
+        "-"
+      ],
+      "tags": [
+        "Halal",
+        "Pescetarians",
+        "Pollo-pescetarian",
+        "Processed Food Level: 4"
+      ],
+      "allergens": [
+        "Gluten",
+        "Fish",
+        "Milk",
+        "Garlic/onion",
+        "(Avoid)Fish",
+        "(Avoid)Yoghurt",
+        "(Avoid)Onion(Fresh)"
+      ],
+      "source": "www.allrecipes.com",
+      "prepMinutes": 30,
+      "cookMinutes": 30,
+      "readyInMinutes": 60,
+      "ingredients": [
+        {
+          "description": "salmon, boned and skinned",
+          "quantity": 4,
+          "unit": "oz",
+          "grams": 113.398,
+          "usdaCode": "15076",
+          "undividable": false
+        },
+        {
+          "description": "bulgur",
+          "quantity": 5,
+          "unit": "tbsp",
+          "grams": 43.75,
+          "usdaCode": "20012",
+          "undividable": false
+        },
+        {
+          "description": "frozen peas",
+          "quantity": 1,
+          "unit": "handful",
+          "grams": 33.5,
+          "usdaCode": "11312",
+          "undividable": false
+        },
+        {
+          "description": "snap beans, chopped",
+          "quantity": 2,
+          "unit": "oz",
+          "grams": 56.699,
+          "usdaCode": "11052",
+          "undividable": false
+        },
+        {
+          "description": "fresh chives, chopped",
+          "quantity": 0.5,
+          "unit": "tbsp",
+          "grams": 1.5,
+          "usdaCode": "11156",
+          "undividable": false
+        },
+        {
+          "description": "parsley, chopped",
+          "quantity": 0.5,
+          "unit": "tbsp",
+          "grams": 1.875,
+          "usdaCode": "11297",
+          "undividable": false
+        },
+        {
+          "description": "salt",
+          "quantity": 1,
+          "unit": "pinch",
+          "grams": 0.5,
+          "usdaCode": "02047",
+          "undividable": false
+        },
+        {
+          "description": "ground black pepper",
+          "quantity": 1,
+          "unit": "pinch",
+          "grams": 0.5,
+          "usdaCode": "02030",
+          "undividable": false
+        },
+        {
+          "description": "|Heading1|To serve",
+          "quantity": 0,
+          "unit": "-",
+          "grams": 0,
+          "usdaCode": "00000",
+          "undividable": false
+        },
+        {
+          "description": "lemon, halved",
+          "quantity": 0.5,
+          "unit": "pcs",
+          "grams": 34,
+          "usdaCode": "09150",
+          "undividable": false
+        },
+        {
+          "description": "low-fat yoghurt",
+          "quantity": 1.5,
+          "unit": "tbsp",
+          "grams": 22.5,
+          "usdaCode": "01117",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 380,
+        "sodiumMg": 308,
+        "potassiumMg": 1027,
+        "phosphorusMg": 448,
+        "proteinG": 32,
+        "carbohydrateG": 47,
+        "fatG": 9,
+        "additional": {
+          "waterG": 212.081,
+          "ashG": 5.101,
+          "fiberG": 9.685,
+          "sugarG": 6.184,
+          "calciumMg": 113.586,
+          "ironMg": 3.492,
+          "magnesiumMg": 136.493,
+          "zincMg": 2.236,
+          "copperMg": 0.538,
+          "manganeseMg": 1.671,
+          "seleniumMcg": 44.292,
+          "vitaminCMg": 34.513,
+          "thiaminMg": 0.518,
+          "riboflavinMg": 0.633,
+          "niacinMg": 12.244,
+          "pantothenicAcidMg": 2.872,
+          "vitaminB6Mg": 1.228,
+          "folateTotalMcg": 87.353,
+          "folicAcidMcg": 0,
+          "foodFolateMcg": 87.353,
+          "folateDfeMcg": 87.353,
+          "cholineMg": 35.542,
+          "vitaminB12Mcg": 3.732,
+          "vitaminAIu": 1374.885,
+          "vitaminARaeMcg": 82.746,
+          "retinolMcg": 16.758,
+          "alphaCaroteneMcg": 46.222,
+          "betaCaroteneMcg": 764.414,
+          "betaCryptoxanthinMcg": 6.925,
+          "lycopeneMcg": 0.1,
+          "luteinZeaxanthinMcg": 1362.167,
+          "vitaminEMg": 0.346,
+          "vitaminDMcg": 0,
+          "vitaminDIu": 0.225,
+          "vitaminKMcg": 69.362,
+          "saturatedFatG": 1.514,
+          "monounsaturatedFatG": 2.587,
+          "polyunsaturatedFatG": 3.29,
+          "cholesterolMg": 63.719
+        }
+      }
+    },
+    {
+      "id": "439",
+      "recipeGuid": "74a4338e-baa5-4d7e-9827-52647aa4a6c0",
+      "name": "Vegan ginger tofu with mushrooms",
+      "imageId": "4f1ecd3d-4171-42cd-ba97-e07c6bed1f12",
+      "imagePath": "/images/4f1ecd3d-4171-42cd-ba97-e07c6bed1f12.jpg",
+      "description": "A stir-fry like this one meets all your veggie needs and is easy to knock up after work",
+      "mealTypes": [
+        "Lunch",
+        "Dinner"
+      ],
+      "instructions": [
+        "Heat the oil in a wok over medium-high heat. Stir-fry the onion and garlic for 2 to 3 minutes or until just soft. Add the ginger and tofu. Stir-fry for 3 minutes.",
+        "Add the mushrooms, soy sauce and stir-fry sauce. Stir-fry for 2 minutes. Add the gai lan. Stir-fry 1 to 2 minutes or until gai lan is just tender. Remove from heat.",
+        "Meanwhile, place the noodles in a heatproof bowl. Cover with boiling water. Set aside for 2 to 3 minutes or until heated through. Using a fork, separate the noodles. Drain. Serve."
+      ],
+      "tags": [
+        "Kosher",
+        "Halal",
+        "Ovo-Vegetarian",
+        "Lacto-Vegetarian",
+        "Lacto-Ovo Vegetarian",
+        "Pescetarians",
+        "Pollotarian",
+        "Pollo-pescetarian",
+        "Processed Food Level: 4"
+      ],
+      "allergens": [
+        "Gluten",
+        "Soybeans",
+        "Garlic/onion",
+        "Check packaging",
+        "Other",
+        "(Avoid)Mushrooms",
+        "(Avoid)Soybeans",
+        "(Avoid)Garlic(Fresh)",
+        "(Avoid)Onion(Fresh)"
+      ],
+      "source": "www.allrecipes.com",
+      "prepMinutes": 13,
+      "cookMinutes": 10,
+      "readyInMinutes": 23,
+      "ingredients": [
+        {
+          "description": "vegetable oil",
+          "quantity": 1,
+          "unit": "tsp",
+          "grams": 4.54166666666667,
+          "usdaCode": "04582",
+          "undividable": false
+        },
+        {
+          "description": "onion, thinly sliced",
+          "quantity": 1,
+          "unit": "pcs",
+          "grams": 120,
+          "usdaCode": "11282",
+          "undividable": false
+        },
+        {
+          "description": "garlic, sliced",
+          "quantity": 1,
+          "unit": "clove",
+          "grams": 3,
+          "usdaCode": "11215",
+          "undividable": false
+        },
+        {
+          "description": "ginger, peeled, cut into thin matchsticks",
+          "quantity": 1,
+          "unit": "cm",
+          "grams": 5,
+          "usdaCode": "11216",
+          "undividable": false
+        },
+        {
+          "description": "firm tofu, cut into 3cm squares",
+          "quantity": 1,
+          "unit": "oz",
+          "grams": 28.3495,
+          "usdaCode": "16126",
+          "undividable": false
+        },
+        {
+          "description": "brown mushrooms, halved",
+          "quantity": 1,
+          "unit": "oz",
+          "grams": 28.3495,
+          "usdaCode": "11266",
+          "undividable": false
+        },
+        {
+          "description": "enoki mushrooms, trimmed",
+          "quantity": 1,
+          "unit": "oz",
+          "grams": 28.3495,
+          "usdaCode": "11950",
+          "undividable": false
+        },
+        {
+          "description": "light soy sauce",
+          "quantity": 1,
+          "unit": "tbsp",
+          "grams": 14.2,
+          "usdaCode": "16424",
+          "undividable": false
+        },
+        {
+          "description": "choy sum, chopped",
+          "quantity": 1,
+          "unit": "pcs",
+          "grams": 100,
+          "usdaCode": "11116",
+          "undividable": false
+        },
+        {
+          "description": "udon noodles",
+          "quantity": 4,
+          "unit": "oz",
+          "grams": 113.398,
+          "usdaCode": "20116",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 560,
+        "sodiumMg": 2674,
+        "potassiumMg": 967,
+        "phosphorusMg": 290,
+        "proteinG": 21,
+        "carbohydrateG": 104,
+        "fatG": 7,
+        "additional": {
+          "waterG": 303.737,
+          "ashG": 8.683,
+          "fiberG": 9.369,
+          "sugarG": 7.174,
+          "calciumMg": 231.257,
+          "ironMg": 3.717,
+          "magnesiumMg": 93.026,
+          "zincMg": 1.8,
+          "copperMg": 0.491,
+          "manganeseMg": 1.3,
+          "seleniumMcg": 21.845,
+          "vitaminCMg": 55.123,
+          "thiaminMg": 0.33,
+          "riboflavinMg": 0.384,
+          "niacinMg": 4.951,
+          "pantothenicAcidMg": 1.72,
+          "vitaminB6Mg": 0.542,
+          "folateTotalMcg": 137.645,
+          "folicAcidMcg": 0,
+          "foodFolateMcg": 137.645,
+          "folateDfeMcg": 137.645,
+          "cholineMg": 47.993,
+          "vitaminB12Mcg": 0.028,
+          "vitaminAIu": 4470.67,
+          "vitaminARaeMcg": 223,
+          "retinolMcg": 0,
+          "alphaCaroteneMcg": 1,
+          "betaCaroteneMcg": 2682.35,
+          "betaCryptoxanthinMcg": 0,
+          "lycopeneMcg": 0,
+          "luteinZeaxanthinMcg": 45.28,
+          "vitaminEMg": 0.989,
+          "vitaminDMcg": 0.057,
+          "vitaminDIu": 2.268,
+          "vitaminKMcg": 49.955,
+          "saturatedFatG": 0.795,
+          "monounsaturatedFatG": 3.346,
+          "polyunsaturatedFatG": 2.308,
+          "cholesterolMg": 0
+        }
+      }
+    },
+    {
+      "id": "453",
+      "recipeGuid": "d8c08e54-e736-48fc-a804-2bc363697f79",
+      "name": "Black bean, avocado and lettuce wraps",
+      "imageId": "9928de80-0711-4f73-a5f7-eddb1638a574",
+      "imagePath": "/images/9928de80-0711-4f73-a5f7-eddb1638a574.jpg",
+      "description": "These quick, no-cook tacos are the perfect easy lunch. Did we mention they're vegan, too?",
+      "mealTypes": [
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Snack"
+      ],
+      "instructions": [
+        "Combine beans, tomato, cucumber, avocado and coriander in a bowl.",
+        "Whisk together the juice, oil and paprika in a small bowl. Add to bean mixture. Season. Stir to combine. Serve in lettuce leaves."
+      ],
+      "tags": [
+        "Kosher",
+        "Halal",
+        "Vegan",
+        "Ovo-Vegetarian",
+        "Lacto-Vegetarian",
+        "Lacto-Ovo Vegetarian",
+        "Pescetarians",
+        "Pollotarian",
+        "Pollo-pescetarian",
+        "Processed Food Level: 3"
+      ],
+      "allergens": [
+        "Check packaging",
+        "Other"
+      ],
+      "source": "www.allrecipes.com",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "readyInMinutes": 10,
+      "ingredients": [
+        {
+          "description": "canned red kidney beans, drained, rinsed",
+          "quantity": 0.5,
+          "unit": "cup",
+          "grams": 128,
+          "usdaCode": "11030",
+          "undividable": false
+        },
+        {
+          "description": "roma tomato, finely chopped",
+          "quantity": 1,
+          "unit": "pcs",
+          "grams": 60,
+          "usdaCode": "51529",
+          "undividable": false
+        },
+        {
+          "description": "Lebanese cucumber, finely chopped",
+          "quantity": 0.5,
+          "unit": "pcs",
+          "grams": 150.5,
+          "usdaCode": "11205",
+          "undividable": false
+        },
+        {
+          "description": "avocado, finely chopped",
+          "quantity": 0.25,
+          "unit": "pcs",
+          "grams": 37.5,
+          "usdaCode": "09037",
+          "undividable": false
+        },
+        {
+          "description": "fresh coriander, chopped",
+          "quantity": 1,
+          "unit": "tbsp",
+          "grams": 1,
+          "usdaCode": "11165",
+          "undividable": false
+        },
+        {
+          "description": "lime, juiced",
+          "quantity": 2,
+          "unit": "tsp",
+          "grams": 10.0833333333333,
+          "usdaCode": "09160",
+          "undividable": false
+        },
+        {
+          "description": "olive oil",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "grams": 2.25,
+          "usdaCode": "04053",
+          "undividable": false
+        },
+        {
+          "description": "sweet paprika powder",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "grams": 1.13333333333333,
+          "usdaCode": "02028",
+          "undividable": false
+        },
+        {
+          "description": "cos lettuce, to serve",
+          "quantity": 1,
+          "unit": "head",
+          "grams": 120,
+          "usdaCode": "11251",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 182,
+        "sodiumMg": 29,
+        "potassiumMg": 1133,
+        "phosphorusMg": 160,
+        "proteinG": 10,
+        "carbohydrateG": 22,
+        "fatG": 9,
+        "additional": {
+          "waterG": 465.535,
+          "ashG": 3.036,
+          "fiberG": 6.969,
+          "sugarG": 6.063,
+          "calciumMg": 103.2,
+          "ironMg": 3.372,
+          "magnesiumMg": 86.364,
+          "zincMg": 1.544,
+          "copperMg": 0.462,
+          "manganeseMg": 0.705,
+          "seleniumMcg": 1.94,
+          "vitaminCMg": 69.857,
+          "thiaminMg": 0.645,
+          "riboflavinMg": 0.557,
+          "niacinMg": 5.541,
+          "pantothenicAcidMg": 1.669,
+          "vitaminB6Mg": 0.442,
+          "folateTotalMcg": 275.454,
+          "folicAcidMcg": 0,
+          "foodFolateMcg": 275.454,
+          "folateDfeMcg": 275.454,
+          "cholineMg": 31.488,
+          "vitaminB12Mcg": 0,
+          "vitaminAIu": 11797.869,
+          "vitaminARaeMcg": 590.036,
+          "retinolMcg": 0,
+          "alphaCaroteneMcg": 93.258,
+          "betaCaroteneMcg": 6970.403,
+          "betaCryptoxanthinMcg": 121.758,
+          "lycopeneMcg": 1543.8,
+          "luteinZeaxanthinMcg": 3207.789,
+          "vitaminEMg": 2.001,
+          "vitaminDMcg": 0,
+          "vitaminDIu": 0,
+          "vitaminKMcg": 165.722,
+          "saturatedFatG": 1.359,
+          "monounsaturatedFatG": 5.437,
+          "polyunsaturatedFatG": 1.706,
+          "cholesterolMg": 0
+        }
+      }
+    },
+    {
+      "id": "458",
+      "recipeGuid": "536d24de-f149-419e-8507-aff9ecd0bebd",
+      "name": "Italian pasta salad ",
+      "imageId": "3a1016c5-5f18-4a6c-8c03-9fd9d130773a",
+      "imagePath": "/images/3a1016c5-5f18-4a6c-8c03-9fd9d130773a.jpg",
+      "description": "",
+      "mealTypes": [
+        "Lunch",
+        "Dinner"
+      ],
+      "instructions": [
+        "1. Boil pasta according to package instructions.",
+        "2. Whisk dressing ingredients in a large bowl.",
+        "3. Add the drained hot pasta to the dressing.",
+        "4. Allow the pasta to cool to absorb the dressing.",
+        "5. Add the remaining ingredients.",
+        "6. Stir to combine."
+      ],
+      "tags": [
+        "Kosher",
+        "Halal",
+        "Lacto-Ovo Vegetarian",
+        "Pescetarians",
+        "Pollotarian",
+        "Pollo-pescetarian",
+        "Processed Food Level: 4"
+      ],
+      "allergens": [
+        "Gluten",
+        "Egg",
+        "Milk",
+        "Mustard",
+        "Garlic/onion",
+        "Check packaging",
+        "(Avoid)Cheese",
+        "(Avoid)Garlic(Fresh)",
+        "(Avoid)Onion(Fresh)"
+      ],
+      "source": "https://www.healthyseasonalrecipes.com/italian-pasta-salad/",
+      "prepMinutes": 10,
+      "cookMinutes": 10,
+      "readyInMinutes": 20,
+      "ingredients": [
+        {
+          "description": "fusilli",
+          "quantity": 0.75,
+          "unit": "cup",
+          "grams": 68.25,
+          "usdaCode": "20120",
+          "undividable": false
+        },
+        {
+          "description": "garlic",
+          "quantity": 0.25,
+          "unit": "clove",
+          "grams": 0.75,
+          "usdaCode": "11215",
+          "undividable": false
+        },
+        {
+          "description": "extra virgin olive oil",
+          "quantity": 2,
+          "unit": "tbsp",
+          "grams": 27,
+          "usdaCode": "04053",
+          "undividable": false
+        },
+        {
+          "description": "red wine vinegar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "grams": 14.9375,
+          "usdaCode": "02068",
+          "undividable": false
+        },
+        {
+          "description": "Dijon mustard",
+          "quantity": 0.25,
+          "unit": "tsp",
+          "grams": 1.296875,
+          "usdaCode": "02046",
+          "undividable": false
+        },
+        {
+          "description": "Italian spice mix",
+          "quantity": 0.25,
+          "unit": "tsp",
+          "grams": 0.25,
+          "usdaCode": "02027",
+          "undividable": false
+        },
+        {
+          "description": "salt",
+          "quantity": 0.25,
+          "unit": "tsp",
+          "grams": 1.5,
+          "usdaCode": "02047",
+          "undividable": false
+        },
+        {
+          "description": "ground black pepper",
+          "quantity": 1,
+          "unit": "pinch",
+          "grams": 0.5,
+          "usdaCode": "02030",
+          "undividable": false
+        },
+        {
+          "description": "roasted red bell pepper, drained and chopped",
+          "quantity": 0.25,
+          "unit": "cup",
+          "grams": 26.5,
+          "usdaCode": "11921",
+          "undividable": false
+        },
+        {
+          "description": "scallions, chopped",
+          "quantity": 0.25,
+          "unit": "cup",
+          "grams": 25,
+          "usdaCode": "11291",
+          "undividable": false
+        },
+        {
+          "description": "cherry tomato, halved",
+          "quantity": 0.25,
+          "unit": "cup",
+          "grams": 45,
+          "usdaCode": "51529",
+          "undividable": false
+        },
+        {
+          "description": "black olives, sliced",
+          "quantity": 2,
+          "unit": "tbsp",
+          "grams": 16.8,
+          "usdaCode": "09193",
+          "undividable": false
+        },
+        {
+          "description": "fresh basil leaves, chopped",
+          "quantity": 1.5,
+          "unit": "tbsp",
+          "grams": 7.95,
+          "usdaCode": "02044",
+          "undividable": false
+        },
+        {
+          "description": "mozzarella cheese, chopped",
+          "quantity": 2,
+          "unit": "oz",
+          "grams": 56.699,
+          "usdaCode": "01026",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 741,
+        "sodiumMg": 1093,
+        "potassiumMg": 468,
+        "phosphorusMg": 366,
+        "proteinG": 23,
+        "carbohydrateG": 60,
+        "fatG": 46,
+        "additional": {
+          "waterG": 157.509,
+          "ashG": 5.186,
+          "fiberG": 4.816,
+          "sugarG": 5.363,
+          "calciumMg": 363.781,
+          "ironMg": 4.322,
+          "magnesiumMg": 69.355,
+          "zincMg": 2.969,
+          "copperMg": 0.341,
+          "manganeseMg": 0.962,
+          "seleniumMcg": 53.676,
+          "vitaminCMg": 55.908,
+          "thiaminMg": 0.678,
+          "riboflavinMg": 0.501,
+          "niacinMg": 5.716,
+          "pantothenicAcidMg": 0.534,
+          "vitaminB6Mg": 0.294,
+          "folateTotalMcg": 195.198,
+          "folicAcidMcg": 149.468,
+          "foodFolateMcg": 45.731,
+          "folateDfeMcg": 300.303,
+          "cholineMg": 28.413,
+          "vitaminB12Mcg": 1.293,
+          "vitaminAIu": 2234.32,
+          "vitaminARaeMcg": 194.222,
+          "retinolMcg": 98.656,
+          "alphaCaroteneMcg": 71.013,
+          "betaCaroteneMcg": 1094.29,
+          "betaCryptoxanthinMcg": 26.067,
+          "lycopeneMcg": 1286.21,
+          "luteinZeaxanthinMcg": 923.423,
+          "vitaminEMg": 5.654,
+          "vitaminDMcg": 0.227,
+          "vitaminDIu": 9.072,
+          "vitaminKMcg": 112.893,
+          "saturatedFatG": 12.063,
+          "monounsaturatedFatG": 25.536,
+          "polyunsaturatedFatG": 5.436,
+          "cholesterolMg": 44.792
+        }
+      }
+    },
+    {
+      "id": "477",
+      "recipeGuid": "891452cf-a1cc-425a-a839-91f91250b0bc",
+      "name": "Chicken fried rice ",
+      "imageId": "df537fa6-a714-4123-9436-ff4ff27cf8b5",
+      "imagePath": "/images/df537fa6-a714-4123-9436-ff4ff27cf8b5.jpg",
+      "description": "",
+      "mealTypes": [
+        "Lunch",
+        "Dinner"
+      ],
+      "instructions": [
+        "1. In a skillet over medium-high heat, add the oil. Once the skillet is hot, add the chicken thighs. Cover and cook for 5 minutes, flip chicken over and cook for an additional 5 minutes, covered. When done, chicken juices will run clear. Remove chicken from skillet and transfer to cutting board. Cut the chicken into 1/2'' bite size pieces. Set aside for later.",
+        "2. In the same skillet you cooked the chicken in, add the onion and carrot. Cook about 5-7 minutes over medium heat, stirring occasionally, until tender. Add peas, corn, and garlic to the skillet and cook for about 2-3 minutes until corn and peas are hot and no longer frozen. Be sure to stir every so often to ensure an even cook. Add the chicken back to the skillet.",
+        "3. Turn heat up to high. Add the rice and begin to stir fry for about 3-5 minutes. Be careful not to mush the rice with a spatula or spoon when stir frying.",
+        "4. Turn heat to low. Form a whole in the middle of the fried rice and crack in the egg. Begin to scramble until just almost done. Then, gently mix everything together.",
+        "5. Remove fried rice from heat and serve immediately. Serve with soy sauce and sriracha (optional). Enjoy!"
+      ],
+      "tags": [
+        "Kosher",
+        "Halal",
+        "Pollotarian",
+        "Pollo-pescetarian",
+        "Processed Food Level: 4"
+      ],
+      "allergens": [
+        "Gluten",
+        "Egg",
+        "Garlic/onion",
+        "Check packaging",
+        "(Avoid)Chicken",
+        "(Avoid)Non-lean meat",
+        "(Avoid)Egg",
+        "(Avoid)Soybeans",
+        "(Avoid)Garlic(Fresh)",
+        "(Avoid)Onion(Fresh)"
+      ],
+      "source": "https://amandacooksandstyles.com/chicken-fried-rice/",
+      "prepMinutes": 15,
+      "cookMinutes": 20,
+      "readyInMinutes": 35,
+      "ingredients": [
+        {
+          "description": "medium grain rice, cooked",
+          "quantity": 0.5,
+          "unit": "cup",
+          "grams": 97.5,
+          "usdaCode": "20050",
+          "undividable": false
+        },
+        {
+          "description": "chicken thigh",
+          "quantity": 6,
+          "unit": "oz",
+          "grams": 170.097,
+          "usdaCode": "05091",
+          "undividable": false
+        },
+        {
+          "description": "carrot, peeled and chopped",
+          "quantity": 3,
+          "unit": "oz",
+          "grams": 85.0485,
+          "usdaCode": "11124",
+          "undividable": false
+        },
+        {
+          "description": "onion",
+          "quantity": 2,
+          "unit": "oz",
+          "grams": 56.699,
+          "usdaCode": "11282",
+          "undividable": false
+        },
+        {
+          "description": "garlic",
+          "quantity": 1,
+          "unit": "clove",
+          "grams": 3,
+          "usdaCode": "11215",
+          "undividable": false
+        },
+        {
+          "description": "frozen peas",
+          "quantity": 2,
+          "unit": "tbsp",
+          "grams": 16.75,
+          "usdaCode": "11312",
+          "undividable": false
+        },
+        {
+          "description": "frozen corn",
+          "quantity": 3,
+          "unit": "tbsp",
+          "grams": 25.5,
+          "usdaCode": "11178",
+          "undividable": false
+        },
+        {
+          "description": "egg",
+          "quantity": 1,
+          "unit": "pcs",
+          "grams": 50,
+          "usdaCode": "01123",
+          "undividable": false
+        },
+        {
+          "description": "soy sauce",
+          "quantity": 1,
+          "unit": "tbsp",
+          "grams": 16,
+          "usdaCode": "16123",
+          "undividable": false
+        },
+        {
+          "description": "salt",
+          "quantity": 0.25,
+          "unit": "tsp",
+          "grams": 1.5,
+          "usdaCode": "02047",
+          "undividable": false
+        },
+        {
+          "description": "ground black pepper",
+          "quantity": 0.25,
+          "unit": "tsp",
+          "grams": 0.575,
+          "usdaCode": "02030",
+          "undividable": false
+        },
+        {
+          "description": "garlic powder",
+          "quantity": 0.25,
+          "unit": "tsp",
+          "grams": 0.808333333333333,
+          "usdaCode": "02020",
+          "undividable": false
+        },
+        {
+          "description": "sweet paprika powder",
+          "quantity": 0.25,
+          "unit": "tsp",
+          "grams": 0.566666666666667,
+          "usdaCode": "02028",
+          "undividable": false
+        },
+        {
+          "description": "olive oil",
+          "quantity": 1,
+          "unit": "tbsp",
+          "grams": 13.5,
+          "usdaCode": "04053",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 1029,
+        "sodiumMg": 1752,
+        "potassiumMg": 1047,
+        "phosphorusMg": 586,
+        "proteinG": 46,
+        "carbohydrateG": 102,
+        "fatG": 48,
+        "additional": {
+          "waterG": 335.174,
+          "ashG": 7.824,
+          "fiberG": 6.606,
+          "sugarG": 8.271,
+          "calciumMg": 110.182,
+          "ironMg": 7.605,
+          "magnesiumMg": 110.783,
+          "zincMg": 4.736,
+          "copperMg": 0.358,
+          "manganeseMg": 1.696,
+          "seleniumMcg": 63.851,
+          "vitaminCMg": 14.811,
+          "thiaminMg": 0.872,
+          "riboflavinMg": 0.66,
+          "niacinMg": 14.946,
+          "pantothenicAcidMg": 2.977,
+          "vitaminB6Mg": 1.147,
+          "folateTotalMcg": 301.903,
+          "folicAcidMcg": 216.45,
+          "foodFolateMcg": 85.453,
+          "folateDfeMcg": 453.028,
+          "cholineMg": 250.787,
+          "vitaminB12Mcg": 1.5,
+          "vitaminAIu": 15288.973,
+          "vitaminARaeMcg": 863.192,
+          "retinolMcg": 119.122,
+          "alphaCaroteneMcg": 2968.262,
+          "betaCaroteneMcg": 7414.702,
+          "betaCryptoxanthinMcg": 70.298,
+          "lycopeneMcg": 0.965,
+          "luteinZeaxanthinMcg": 1330.957,
+          "vitaminEMg": 3.702,
+          "vitaminDMcg": 1.17,
+          "vitaminDIu": 46.103,
+          "vitaminKMcg": 29.503,
+          "saturatedFatG": 11.409,
+          "monounsaturatedFatG": 23.772,
+          "polyunsaturatedFatG": 8.757,
+          "cholesterolMg": 352.695
+        }
+      }
+    },
+    {
+      "id": "540",
+      "recipeGuid": "6a85bf3a-0848-4136-bb90-9839e5b852ac",
+      "name": "Lentil pasta, with turkey, beans and cherry tomatoes",
+      "imageId": "5c035e77-75b1-4285-b55c-77b4f9a3ac79",
+      "imagePath": "/images/5c035e77-75b1-4285-b55c-77b4f9a3ac79.jpg",
+      "description": "",
+      "mealTypes": [
+        "Lunch",
+        "Dinner"
+      ],
+      "instructions": [
+        "1.Cook pasta in a large saucepan of salted boiling water following packet directions, adding the beans in the last 2 minutes of cooking.",
+        "2.Meanwhile, heat the oil in a deep non-stick frying pan over medium heat. Add the onion and cook, stirring, for 3 minutes or until the onion softens. Add the garlic and chili flakes. Cook, stirring, for 1 minute or until aromatic. Add the turkey and cook, using a wooden spoon to break up any lumps, for 5 minutes or until browned.",
+        "3.Addtomato, vinegar and 60ml (1 ⁄4 cup) water. Bring to the boil then reduce heat and simmer for 5 minutes. Add pasta, beans and spinach. Toss to combine. Top with spoonfuls of ricotta to serve."
+      ],
+      "tags": [
+        "Halal",
+        "Pollotarian",
+        "Pollo-pescetarian",
+        "Processed Food Level: 3"
+      ],
+      "allergens": [
+        "Milk",
+        "Garlic/onion",
+        "Check packaging",
+        "(Avoid)Turkey",
+        "(Avoid)Spinach",
+        "(Avoid)Cheese",
+        "(Avoid)Garlic(Fresh)",
+        "(Avoid)Onion(Fresh)"
+      ],
+      "source": "https://www.taste.com.au/",
+      "prepMinutes": 10,
+      "cookMinutes": 15,
+      "readyInMinutes": 25,
+      "ingredients": [
+        {
+          "description": "red lentil pasta",
+          "quantity": 2.25,
+          "unit": "oz",
+          "grams": 63.786375,
+          "usdaCode": "16070",
+          "undividable": false
+        },
+        {
+          "description": "snap beans, sliced diagonally",
+          "quantity": 2,
+          "unit": "oz",
+          "grams": 56.699,
+          "usdaCode": "11052",
+          "undividable": false
+        },
+        {
+          "description": "extra virgin olive oil",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "grams": 2.25,
+          "usdaCode": "04053",
+          "undividable": false
+        },
+        {
+          "description": "red onion, chopped finely",
+          "quantity": 0.75,
+          "unit": "oz",
+          "grams": 21.262125,
+          "usdaCode": "11282",
+          "undividable": false
+        },
+        {
+          "description": "garlic, crushed",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "grams": 1.41666666666667,
+          "usdaCode": "11215",
+          "undividable": false
+        },
+        {
+          "description": "chili flakes",
+          "quantity": 0.25,
+          "unit": "tsp",
+          "grams": 0.666666666666667,
+          "usdaCode": "02009",
+          "undividable": false
+        },
+        {
+          "description": "minced turkey, extra lean",
+          "quantity": 3,
+          "unit": "oz",
+          "grams": 85.0485,
+          "usdaCode": "05305",
+          "undividable": false
+        },
+        {
+          "description": "canned diced tomatoes",
+          "quantity": 3.5,
+          "unit": "oz",
+          "grams": 99.22325,
+          "usdaCode": "11531",
+          "undividable": false
+        },
+        {
+          "description": "red wine vinegar",
+          "quantity": 0.5,
+          "unit": "tsp",
+          "grams": 2.48958333333333,
+          "usdaCode": "02068",
+          "undividable": false
+        },
+        {
+          "description": "baby spinach",
+          "quantity": 1.25,
+          "unit": "oz",
+          "grams": 35.436875,
+          "usdaCode": "11457",
+          "undividable": false
+        },
+        {
+          "description": "ricotta cheese",
+          "quantity": 0.5,
+          "unit": "oz",
+          "grams": 14.17475,
+          "usdaCode": "01036",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 299,
+        "sodiumMg": 228,
+        "potassiumMg": 1009,
+        "phosphorusMg": 374,
+        "proteinG": 27,
+        "carbohydrateG": 25,
+        "fatG": 11,
+        "additional": {
+          "waterG": 315.939,
+          "ashG": 3.421,
+          "fiberG": 9.858,
+          "sugarG": 6.677,
+          "calciumMg": 156.251,
+          "ironMg": 5.423,
+          "magnesiumMg": 99.749,
+          "zincMg": 3.498,
+          "copperMg": 0.401,
+          "manganeseMg": 0.894,
+          "seleniumMcg": 24.3,
+          "vitaminCMg": 32.366,
+          "thiaminMg": 0.825,
+          "riboflavinMg": 0.401,
+          "niacinMg": 7.908,
+          "pantothenicAcidMg": 1.589,
+          "vitaminB6Mg": 0.915,
+          "folateTotalMcg": 222.773,
+          "folicAcidMcg": 0,
+          "foodFolateMcg": 222.773,
+          "folateDfeMcg": 222.773,
+          "cholineMg": 90.484,
+          "vitaminB12Mcg": 0.899,
+          "vitaminAIu": 4441.502,
+          "vitaminARaeMcg": 249.794,
+          "retinolMcg": 33.594,
+          "alphaCaroteneMcg": 53.056,
+          "betaCaroteneMcg": 2559.815,
+          "betaCryptoxanthinMcg": 23.267,
+          "lycopeneMcg": 2517.434,
+          "luteinZeaxanthinMcg": 4766.002,
+          "vitaminEMg": 2.282,
+          "vitaminDMcg": 0.369,
+          "vitaminDIu": 13.324,
+          "vitaminKMcg": 201.494,
+          "saturatedFatG": 3.353,
+          "monounsaturatedFatG": 4.511,
+          "polyunsaturatedFatG": 2.562,
+          "cholesterolMg": 65.913
+        }
+      }
+    },
+    {
+      "id": "569",
+      "recipeGuid": "b0f91c69-9064-4f8d-a8ef-a0a4e1989e6b",
+      "name": "Apple pie smoothie bowl",
+      "imageId": "25e7c604-4edd-4b5d-88e6-6d7cae93ac10",
+      "imagePath": "/images/25e7c604-4edd-4b5d-88e6-6d7cae93ac10.jpg",
+      "description": "",
+      "mealTypes": [
+        "Breakfast",
+        "Snack"
+      ],
+      "instructions": [
+        "1.Place all ingredients in a high-speed blender. Blend until smooth.",
+        "2.Serve with lots of fixings on top!"
+      ],
+      "tags": [
+        "Kosher",
+        "Halal",
+        "Ovo-Vegetarian",
+        "Lacto-Vegetarian",
+        "Lacto-Ovo Vegetarian",
+        "Pescetarians",
+        "Pollotarian",
+        "Pollo-pescetarian",
+        "Processed Food Level: 4"
+      ],
+      "allergens": [
+        "Gluten",
+        "Milk",
+        "Nuts",
+        "Check packaging",
+        "Other",
+        "(Avoid)Yoghurt"
+      ],
+      "source": "https://fitfoodiefinds.com/",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "readyInMinutes": 5,
+      "ingredients": [
+        {
+          "description": "banana, sliced, frozen",
+          "quantity": 1,
+          "unit": "pcs",
+          "grams": 120,
+          "usdaCode": "09040",
+          "undividable": false
+        },
+        {
+          "description": "vanilla-flavor fat-free Greek yogurt",
+          "quantity": 0.5,
+          "unit": "cup",
+          "grams": 120,
+          "usdaCode": "01275",
+          "undividable": false
+        },
+        {
+          "description": "apple sauce, unsweetened",
+          "quantity": 8,
+          "unit": "tbsp",
+          "grams": 122,
+          "usdaCode": "09019",
+          "undividable": false
+        },
+        {
+          "description": "rolled oats",
+          "quantity": 1,
+          "unit": "oz",
+          "grams": 28.3495,
+          "usdaCode": "08120",
+          "undividable": false
+        },
+        {
+          "description": "ground cinnamon",
+          "quantity": 1,
+          "unit": "tsp",
+          "grams": 2.63333333333333,
+          "usdaCode": "02010",
+          "undividable": false
+        },
+        {
+          "description": "vanilla extract",
+          "quantity": 1,
+          "unit": "tsp",
+          "grams": 4.33333333333333,
+          "usdaCode": "02050",
+          "undividable": false
+        },
+        {
+          "description": "almond milk, unsweetened",
+          "quantity": 0.5,
+          "unit": "cup",
+          "grams": 131,
+          "usdaCode": "14091",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 389,
+        "sodiumMg": 142,
+        "potassiumMg": 884,
+        "phosphorusMg": 315,
+        "proteinG": 17,
+        "carbohydrateG": 73,
+        "fatG": 4,
+        "additional": {
+          "waterG": 428.722,
+          "ashG": 3.483,
+          "fiberG": 9.084,
+          "sugarG": 36.15,
+          "calciumMg": 437.754,
+          "ironMg": 2.54,
+          "magnesiumMg": 99.652,
+          "zincMg": 1.981,
+          "copperMg": 0.31,
+          "manganeseMg": 1.918,
+          "seleniumMcg": 22.823,
+          "vitaminCMg": 11.76,
+          "thiaminMg": 0.313,
+          "riboflavinMg": 0.515,
+          "niacinMg": 1.632,
+          "pantothenicAcidMg": 1.287,
+          "vitaminB6Mg": 0.59,
+          "folateTotalMcg": 38.2,
+          "folicAcidMcg": 0,
+          "foodFolateMcg": 38.2,
+          "folateDfeMcg": 38.2,
+          "cholineMg": 26.187,
+          "vitaminB12Mcg": 0.84,
+          "vitaminAIu": 305.968,
+          "vitaminARaeMcg": 61.545,
+          "retinolMcg": 56.33,
+          "alphaCaroteneMcg": 30.026,
+          "betaCaroteneMcg": 50.009,
+          "betaCryptoxanthinMcg": 14.377,
+          "lycopeneMcg": 0.395,
+          "luteinZeaxanthinMcg": 105.235,
+          "vitaminEMg": 4.176,
+          "vitaminDMcg": 1.31,
+          "vitaminDIu": 55.02,
+          "vitaminKMcg": 2.599,
+          "saturatedFatG": 0.682,
+          "monounsaturatedFatG": 1.609,
+          "polyunsaturatedFatG": 1.081,
+          "cholesterolMg": 0
+        }
+      }
+    },
+    {
+      "id": "601",
+      "recipeGuid": "df26ddfd-3f72-4807-a5e0-38af2af8a6fd",
+      "name": "Cucumber Sandwich Appetizers",
+      "imageId": "1ceae0e4-32ea-4a99-ab1a-e8bbe3143ed3",
+      "imagePath": "/images/1ceae0e4-32ea-4a99-ab1a-e8bbe3143ed3.jpg",
+      "description": "",
+      "mealTypes": [
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Snack"
+      ],
+      "instructions": [
+        "1.Mix cream cheese, sour cream, and Italian salad dressing mix in a bowl until well blended.",
+        "2.Spread cream cheese mixture atop pumpernickel party bread and top each slice with 2 cucumber slices."
+      ],
+      "tags": [
+        "Kosher",
+        "Halal",
+        "Lacto-Vegetarian",
+        "Lacto-Ovo Vegetarian",
+        "Pescetarians",
+        "Pollotarian",
+        "Pollo-pescetarian",
+        "Processed Food Level: 3"
+      ],
+      "allergens": [
+        "Gluten",
+        "Milk",
+        "Check packaging",
+        "(Avoid)Cheese"
+      ],
+      "source": "https://www.allrecipes.com/",
+      "prepMinutes": 10,
+      "cookMinutes": 0,
+      "readyInMinutes": 10,
+      "ingredients": [
+        {
+          "description": "cream cheese",
+          "quantity": 0.75,
+          "unit": "oz",
+          "grams": 21.262125,
+          "usdaCode": "01017",
+          "undividable": false
+        },
+        {
+          "description": "sour cream",
+          "quantity": 0.5,
+          "unit": "tbsp",
+          "grams": 7.5625,
+          "usdaCode": "01055",
+          "undividable": false
+        },
+        {
+          "description": "pumpermickel party bread",
+          "quantity": 2,
+          "unit": "slice",
+          "grams": 52,
+          "usdaCode": "18044",
+          "undividable": false
+        },
+        {
+          "description": "cucumber",
+          "quantity": 4,
+          "unit": "slice",
+          "grams": 20,
+          "usdaCode": "11205",
+          "undividable": false
+        },
+        {
+          "description": "Italian spice mix",
+          "quantity": 0.5,
+          "unit": "tbsp",
+          "grams": 1.5,
+          "usdaCode": "02027",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 222,
+        "sodiumMg": 384,
+        "potassiumMg": 194,
+        "phosphorusMg": 130,
+        "proteinG": 6,
+        "carbohydrateG": 28,
+        "fatG": 10,
+        "additional": {
+          "waterG": 56.152,
+          "ashG": 1.866,
+          "fiberG": 4.118,
+          "sugarG": 1.483,
+          "calciumMg": 91.004,
+          "ironMg": 2.129,
+          "magnesiumMg": 37.4,
+          "zincMg": 0.994,
+          "copperMg": 0.172,
+          "manganeseMg": 0.772,
+          "seleniumMcg": 14.855,
+          "vitaminCMg": 0.663,
+          "thiaminMg": 0.186,
+          "riboflavinMg": 0.233,
+          "niacinMg": 1.721,
+          "pantothenicAcidMg": 0.413,
+          "vitaminB6Mg": 0.102,
+          "folateTotalMcg": 56.06,
+          "folicAcidMcg": 30.68,
+          "foodFolateMcg": 25.38,
+          "folateDfeMcg": 77.38,
+          "cholineMg": 16.512,
+          "vitaminB12Mcg": 0.069,
+          "vitaminAIu": 310.87,
+          "vitaminARaeMcg": 75.476,
+          "retinolMcg": 71.987,
+          "alphaCaroteneMcg": 2.713,
+          "betaCaroteneMcg": 38.389,
+          "betaCryptoxanthinMcg": 5.73,
+          "lycopeneMcg": 0,
+          "luteinZeaxanthinMcg": 58.433,
+          "vitaminEMg": 0.707,
+          "vitaminDMcg": 0.015,
+          "vitaminDIu": 0.681,
+          "vitaminKMcg": 13.513,
+          "saturatedFatG": 5.121,
+          "monounsaturatedFatG": 2.652,
+          "polyunsaturatedFatG": 1.019,
+          "cholesterolMg": 24.424
+        }
+      }
+    },
+    {
+      "id": "625",
+      "recipeGuid": "10d18098-c382-4871-8c88-4908d6a6cfa7",
+      "name": "Apple Circles",
+      "imageId": "8d25b2ca-02d9-482f-a879-a047af5cebda",
+      "imagePath": "/images/8d25b2ca-02d9-482f-a879-a047af5cebda.jpg",
+      "description": "",
+      "mealTypes": [
+        "Snack"
+      ],
+      "instructions": [
+        "1.Using an apple corer, keeping the apple whole, core the apple straight down. Discarding the bottom and top slices, cut the apple crosswise into 6 slices and spread on a cutting board. Spread the slices with strawberry yogurt and sprinkle with nuts. Serve."
+      ],
+      "tags": [
+        "Kosher",
+        "Halal",
+        "Ovo-Vegetarian",
+        "Lacto-Vegetarian",
+        "Lacto-Ovo Vegetarian",
+        "Pescetarians",
+        "Pollotarian",
+        "Pollo-pescetarian",
+        "Processed Food Level: 4"
+      ],
+      "allergens": [
+        "Milk",
+        "Nuts",
+        "Check packaging",
+        "(Avoid)Yoghurt"
+      ],
+      "source": "https://www.allrecipes.com/",
+      "prepMinutes": 5,
+      "cookMinutes": 0,
+      "readyInMinutes": 5,
+      "ingredients": [
+        {
+          "description": "apple, unpeeled",
+          "quantity": 0.5,
+          "unit": "pcs",
+          "grams": 40,
+          "usdaCode": "09003",
+          "undividable": false
+        },
+        {
+          "description": "strawberry yogurt",
+          "quantity": 2.25,
+          "unit": "oz",
+          "grams": 63.786375,
+          "usdaCode": "01217",
+          "undividable": false
+        },
+        {
+          "description": "almonds, chopped, toasted (or walnut)",
+          "quantity": 1,
+          "unit": "tbsp",
+          "grams": 8.625,
+          "usdaCode": "12063",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 137,
+        "sodiumMg": 38,
+        "potassiumMg": 229,
+        "phosphorusMg": 121,
+        "proteinG": 5,
+        "carbohydrateG": 19,
+        "fatG": 5,
+        "additional": {
+          "waterG": 81.94,
+          "ashG": 0.991,
+          "fiberG": 1.9,
+          "sugarG": 16.726,
+          "calciumMg": 122.47,
+          "ironMg": 0.414,
+          "magnesiumMg": 35.632,
+          "zincMg": 0.774,
+          "copperMg": 0.157,
+          "manganeseMg": 0.248,
+          "seleniumMcg": 2.15,
+          "vitaminCMg": 2.287,
+          "thiaminMg": 0.037,
+          "riboflavinMg": 0.227,
+          "niacinMg": 0.411,
+          "pantothenicAcidMg": 0.364,
+          "vitaminB6Mg": 0.054,
+          "folateTotalMcg": 11.685,
+          "folicAcidMcg": 0,
+          "foodFolateMcg": 11.685,
+          "folateDfeMcg": 11.685,
+          "cholineMg": 14.784,
+          "vitaminB12Mcg": 0.3,
+          "vitaminAIu": 44.649,
+          "vitaminARaeMcg": 7.579,
+          "retinolMcg": 6.379,
+          "alphaCaroteneMcg": 0,
+          "betaCaroteneMcg": 12.162,
+          "betaCryptoxanthinMcg": 4.4,
+          "lycopeneMcg": 0,
+          "luteinZeaxanthinMcg": 11.686,
+          "vitaminEMg": 2.146,
+          "vitaminDMcg": 0.829,
+          "vitaminDIu": 33.169,
+          "vitaminKMcg": 0.944,
+          "saturatedFatG": 0.809,
+          "monounsaturatedFatG": 3.045,
+          "polyunsaturatedFatG": 1.158,
+          "cholesterolMg": 2.551
+        }
+      }
+    },
+    {
+      "id": "678",
+      "recipeGuid": "acf4affd-d5bb-4713-a43c-03bb6b19fa6e",
+      "name": "Scrambled egg toast",
+      "imageId": "2eac42e6-6ef7-43c6-8c5c-2e58a0bc2670",
+      "imagePath": "/images/2eac42e6-6ef7-43c6-8c5c-2e58a0bc2670.jpg",
+      "description": "",
+      "mealTypes": [
+        "Breakfast",
+        "Dinner"
+      ],
+      "instructions": [
+        "1.Spread a thin layer of softened butter on both sides of the bread. Frythe bread over heat for about 2 minutes on each side, until a goldencrust forms. 2.Remove the bread from the frying pan and add  butter. Add the egg and feta cheese and cook, stirring often, for about 3-4 minutes, until the egg are cooked through. 3.Divide the egg between the bread slices andsprinkle them with freshly chopped dill or parsley."
+      ],
+      "tags": [
+        "Kosher",
+        "Halal",
+        "Lacto-Ovo Vegetarian",
+        "Pescetarians",
+        "Pollotarian",
+        "Pollo-pescetarian",
+        "Processed Food Level: 3"
+      ],
+      "allergens": [
+        "Gluten",
+        "Egg",
+        "Milk",
+        "Check packaging",
+        "(Avoid)Cheese",
+        "(Avoid)Egg"
+      ],
+      "source": "https://cooktoria.com/scrambled-egg-toast/",
+      "prepMinutes": 5,
+      "cookMinutes": 8,
+      "readyInMinutes": 13,
+      "ingredients": [
+        {
+          "description": "crusty bread",
+          "quantity": 2,
+          "unit": "slice",
+          "grams": 60,
+          "usdaCode": "18033",
+          "undividable": false
+        },
+        {
+          "description": "butter",
+          "quantity": 0.5,
+          "unit": "tbsp",
+          "grams": 7.1,
+          "usdaCode": "01145",
+          "undividable": false
+        },
+        {
+          "description": "egg",
+          "quantity": 2,
+          "unit": "pcs",
+          "grams": 100,
+          "usdaCode": "01123",
+          "undividable": false
+        },
+        {
+          "description": "feta cheese, crumbled",
+          "quantity": 0.75,
+          "unit": "oz",
+          "grams": 21.262125,
+          "usdaCode": "01019",
+          "undividable": false
+        },
+        {
+          "description": "parsley",
+          "quantity": 1,
+          "unit": "pinch",
+          "grams": 1,
+          "usdaCode": "11297",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 413,
+        "sodiumMg": 668,
+        "potassiumMg": 224,
+        "phosphorusMg": 334,
+        "proteinG": 21,
+        "carbohydrateG": 32,
+        "fatG": 22,
+        "additional": {
+          "waterG": 111.462,
+          "ashG": 3.334,
+          "fiberG": 1.953,
+          "sugarG": 3.154,
+          "calciumMg": 210.706,
+          "ironMg": 3.716,
+          "magnesiumMg": 32.882,
+          "zincMg": 2.435,
+          "copperMg": 0.196,
+          "manganeseMg": 0.314,
+          "seleniumMcg": 50.281,
+          "vitaminCMg": 1.33,
+          "thiaminMg": 0.358,
+          "riboflavinMg": 0.815,
+          "niacinMg": 2.93,
+          "pantothenicAcidMg": 1.977,
+          "vitaminB6Mg": 0.29,
+          "folateTotalMcg": 170.137,
+          "folicAcidMcg": 96.6,
+          "foodFolateMcg": 73.537,
+          "folateDfeMcg": 237.937,
+          "cholineMg": 307.297,
+          "vitaminB12Mcg": 1.261,
+          "vitaminAIu": 891.995,
+          "vitaminARaeMcg": 239.352,
+          "retinolMcg": 234.219,
+          "alphaCaroteneMcg": 0,
+          "betaCaroteneMcg": 62.396,
+          "betaCryptoxanthinMcg": 9,
+          "lycopeneMcg": 0,
+          "luteinZeaxanthinMcg": 587.41,
+          "vitaminEMg": 1.434,
+          "vitaminDMcg": 2.085,
+          "vitaminDIu": 85.402,
+          "vitaminKMcg": 18.3,
+          "saturatedFatG": 9.89,
+          "monounsaturatedFatG": 6.795,
+          "polyunsaturatedFatG": 3.086,
+          "cholesterolMg": 406.188
+        }
+      }
+    },
+    {
+      "id": "736",
+      "recipeGuid": "8e708e87-3806-44fd-90a8-fcac4fce4ed0",
+      "name": "Pear-spiced oatmeal",
+      "imageId": "281f1ecc-1f9d-462f-b5f1-4c5a9baeebb6",
+      "imagePath": "/images/281f1ecc-1f9d-462f-b5f1-4c5a9baeebb6.jpg",
+      "description": "",
+      "mealTypes": [
+        "Breakfast",
+        "Dinner",
+        "Snack"
+      ],
+      "instructions": [
+        "1. combine oats with milk, heat until dense.",
+        "2. stir in ginger. top with pear.",
+        "3. sprinkle with cinnamon."
+      ],
+      "tags": [
+        "Kosher",
+        "Halal",
+        "Lacto-Vegetarian",
+        "Lacto-Ovo Vegetarian",
+        "Pescetarians",
+        "Pollotarian",
+        "Pollo-pescetarian",
+        "Processed Food Level: 4"
+      ],
+      "allergens": [
+        "Gluten",
+        "Milk",
+        "Check packaging",
+        "Other",
+        "(Avoid)Milk"
+      ],
+      "source": "http://www.eatingwell.com/",
+      "prepMinutes": 15,
+      "cookMinutes": 0,
+      "readyInMinutes": 15,
+      "ingredients": [
+        {
+          "description": "rolled oats",
+          "quantity": 0.25,
+          "unit": "cup",
+          "grams": 20.25,
+          "usdaCode": "08120",
+          "undividable": false
+        },
+        {
+          "description": "ground ginger",
+          "quantity": 1,
+          "unit": "pinch",
+          "grams": 1,
+          "usdaCode": "02021",
+          "undividable": false
+        },
+        {
+          "description": "pear, sliced",
+          "quantity": 0.25,
+          "unit": "cup",
+          "grams": 40.25,
+          "usdaCode": "09252",
+          "undividable": false
+        },
+        {
+          "description": "ground cinnamon",
+          "quantity": 1,
+          "unit": "pinch",
+          "grams": 1,
+          "usdaCode": "02010",
+          "undividable": false
+        },
+        {
+          "description": "milk",
+          "quantity": 0.5,
+          "unit": "cup",
+          "grams": 122,
+          "usdaCode": "01079",
+          "undividable": false
+        }
+      ],
+      "nutrition": {
+        "calories": 167,
+        "sodiumMg": 59,
+        "potassiumMg": 308,
+        "phosphorusMg": 202,
+        "proteinG": 7,
+        "carbohydrateG": 27,
+        "fatG": 4,
+        "additional": {
+          "waterG": 145.03,
+          "ashG": 1.442,
+          "fiberG": 3.965,
+          "sugarG": 10.354,
+          "calciumMg": 171.713,
+          "ironMg": 1.239,
+          "magnesiumMg": 46.923,
+          "zincMg": 1.418,
+          "copperMg": 0.128,
+          "manganeseMg": 1.279,
+          "seleniumMcg": 9.532,
+          "vitaminCMg": 2.02,
+          "thiaminMg": 0.146,
+          "riboflavinMg": 0.27,
+          "niacinMg": 0.514,
+          "pantothenicAcidMg": 0.689,
+          "vitaminB6Mg": 0.086,
+          "folateTotalMcg": 15.588,
+          "folicAcidMcg": 0,
+          "foodFolateMcg": 15.588,
+          "folateDfeMcg": 15.588,
+          "cholineMg": 30.764,
+          "vitaminB12Mcg": 0.647,
+          "vitaminAIu": 245.112,
+          "vitaminARaeMcg": 67.673,
+          "retinolMcg": 67.1,
+          "alphaCaroteneMcg": 0.413,
+          "betaCaroteneMcg": 11.815,
+          "betaCryptoxanthinMcg": 2.095,
+          "lycopeneMcg": 0.15,
+          "luteinZeaxanthinMcg": 56.38,
+          "vitaminEMg": 0.193,
+          "vitaminDMcg": 1.464,
+          "vitaminDIu": 59.78,
+          "vitaminKMcg": 2.74,
+          "saturatedFatG": 1.797,
+          "monounsaturatedFatG": 1.125,
+          "polyunsaturatedFatG": 0.603,
+          "cholesterolMg": 9.76
+        }
+      }
+    }
+  ]
+}
