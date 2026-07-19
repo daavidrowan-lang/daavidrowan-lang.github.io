@@ -7,7 +7,7 @@ The public homepage intentionally contains no navigation to project sites.
 - CKD Meal Planner: `http://rowanworkshop.com/ckd/`
 - TenderFit HU: `http://rowanworkshop.com/tenderfit/`
 - Web App Repair: `http://rowanworkshop.com/repair/`
-- Email forwarding: `hello@rowanworkshop.com` to `daavidrowan@gmail.com`
+- Public contact: `hello@rowanworkshop.com` (domain forwarding alias)
 
 The project paths are unlisted, excluded from the homepage navigation, and marked `noindex`. They are not access-controlled: anyone who knows or discovers an exact URL can open it.
 
