@@ -6,6 +6,7 @@ await mkdir("dist/.openai", { recursive: true });
 await cp("index.html", "dist/index.html");
 await cp("styles.css", "dist/styles.css");
 await cp("robots.txt", "dist/robots.txt");
+await cp("repair", "dist/repair", { recursive: true });
 await cp(".openai/hosting.json", "dist/.openai/hosting.json");
 await writeFile(
   "dist/server/index.js",
