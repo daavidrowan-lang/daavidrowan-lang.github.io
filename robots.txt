@@ -3,3 +3,4 @@ Allow: /
 Disallow: /ckd/
 Disallow: /tenderfit/
 Disallow: /repair/
+Sitemap: https://rowanworkshop.com/sitemap.xml
