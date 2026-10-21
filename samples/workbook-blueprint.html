@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Equipment quotation - sample migration blueprint | Rowan Workshop</title>
+<style>:root{color-scheme:light;--ink:#172b3a;--muted:#526574;--accent:#176e72;--line:#dce5e8}*{box-sizing:border-box}body{margin:0;background:#f5f7f8;color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:1040px;margin:40px auto;background:white;padding:48px;border:1px solid var(--line)}h1{font-size:clamp(30px,5vw,46px);line-height:1.12;letter-spacing:-.035em;margin:14px 0 18px}h2{font-size:23px;line-height:1.3;margin:40px 0 12px}h3{font-size:18px}p{max-width:78ch}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}.intro{font-size:19px;color:var(--muted)}.notice{border-left:4px solid var(--accent);padding:16px 20px;background:#edf5f4}.meta{display:flex;gap:24px;flex-wrap:wrap;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.meta div{min-width:150px}.meta strong{display:block;font-size:22px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}th{text-align:left;background:#243e50;color:white;font-weight:650}th,td{padding:12px 14px;vertical-align:top;border-bottom:1px solid var(--line)}code{font:13px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}a{color:var(--accent);text-underline-offset:3px}.muted{color:var(--muted)}li{margin-bottom:9px}.flow{padding:18px;background:#f4f6f8;font-weight:650}footer{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}@media(max-width:700px){main{margin:0;border:0;padding:26px 20px}th,td{padding:10px 8px}}@media print{body{background:white;font-size:11pt}main{margin:0;padding:0;border:0;max-width:none}h2{break-after:avoid}tr,.notice{break-inside:avoid}a{color:inherit}button{display:none}}</style><script type="module" src="/sample-downloads.js"></script></head>
+<body><main>
+<div class="eyebrow">Rowan Workshop / sample deliverable</div>
+<h1>Equipment quotation<br>Migration blueprint</h1>
+<p class="intro">What the workbook calculates, the rules a replacement must preserve, and the decisions the business still needs to make.</p>
+<p class="notice"><strong>Synthetic demonstration.</strong> This report describes the supplied illustrative workbook. It is not a customer case study. Observed formulas describe current workbook behavior, which may differ from approved business policy.</p>
+<div class="meta"><div>Source file<strong>quotation-example.xlsx</strong></div><div>Coverage<strong>1 sheet / 16 formulas</strong></div><div>Current quoted total<strong>USD 1,220.00</strong></div></div>
+<p><a href="quotation-example.xlsx" download>Download the source workbook</a>. All references below refer to its <code>Quote</code> sheet. The current workbook has three order lines and editable discount/freight assumptions. It excludes tax.</p>
+
+<h2>1. Operational flow</h2>
+<p class="flow">Order lines + discount policy → line gross → line discount → line net → net goods total + freight → quoted total</p>
+<p>The quantity threshold applies to <strong>each line</strong>. It does not add all quantities together to determine discount eligibility. Freight is determined after discounts. These two details should remain visible in the replacement specification.</p>
+
+<h2>2. Source-linked rule register</h2>
+<div class="table-wrap"><table><thead><tr><th>ID / source</th><th>Observed behavior</th><th>Formula evidence</th></tr></thead><tbody>
+<tr><td>Q1<br><code>Quote!D13:D15</code></td><td>Each gross line amount is quantity multiplied by unit price.</td><td><code>D13 = B13*C13</code><br>The same relative pattern appears on rows 14 and 15.</td></tr>
+<tr><td>Q2<br><code>Quote!E13:E15</code><br><code>Quote!B7:B8</code></td><td>At a line quantity of at least 10, apply a 10% discount. Below 10, apply zero discount.</td><td><code>E13 = IF(B13&gt;=$B$7,$B$8,0)</code><br><code>B7 = 10; B8 = 0.10</code></td></tr>
+<tr><td>Q3<br><code>Quote!F13:G15</code></td><td>Discount amount equals gross multiplied by the discount rate. Net equals gross minus that amount.</td><td><code>F13 = D13*E13</code><br><code>G13 = D13-F13</code></td></tr>
+<tr><td>Q4<br><code>Quote!B18:B19</code><br><code>Quote!B9:B10</code></td><td>Sum the net line amounts. Net goods at least USD 1,000 receives zero freight. Below the threshold, freight is USD 45.</td><td><code>B18 = SUM(G13:G15)</code><br><code>B19 = IF(B18&gt;=$B$9,0,$B$10)</code><br><code>B9 = 1000; B10 = 45</code></td></tr>
+<tr><td>Q5<br><code>Quote!B5</code></td><td>The quoted total includes net line amounts plus freight. No tax calculation is present.</td><td><code>B5 = SUM(G13:G15)+B19</code></td></tr>
+<tr><td>Q6<br><code>Quote!B20</code></td><td>Total units sum all three line quantities. This result does not drive discount eligibility.</td><td><code>B20 = SUM(B13:B15)</code></td></tr>
+</tbody></table></div>
+
+<h2>3. Reconcile the current example</h2>
+<div class="table-wrap"><table><thead><tr><th>Line</th><th>Gross</th><th>Discount</th><th>Net</th></tr></thead><tbody>
+<tr><td>WIDGET-A: 10 × USD 80</td><td>USD 800</td><td>10% / USD 80</td><td>USD 720</td></tr>
+<tr><td>WIDGET-B: 5 × USD 60</td><td>USD 300</td><td>0% / USD 0</td><td>USD 300</td></tr>
+<tr><td>SERVICE-C: 1 × USD 200</td><td>USD 200</td><td>0% / USD 0</td><td>USD 200</td></tr>
+<tr><td><strong>Net goods + freight</strong></td><td></td><td>Freight: USD 0</td><td><strong>USD 1,220</strong></td></tr>
+</tbody></table></div>
+
+<h2>4. Proposed replacement data model</h2>
+<p>These entities are <strong>design proposals</strong>, not objects found inside the workbook.</p>
+<ul>
+<li><strong>Quote:</strong> identifier, status, currency, line collection, applied policy version, net goods total, freight and total. Customer identity and quote expiry require clarification.</li>
+<li><strong>Quote line:</strong> SKU, quantity, unit price, gross, discount rate, discount amount and net amount. Keep derived amounts separate from editable inputs.</li>
+<li><strong>Pricing policy:</strong> discount quantity, discount rate, free-freight threshold and freight charge. Confirm who can change policy and whether old quotes retain their original policy.</li>
+</ul>
+
+<h2>5. Decisions needed before a fixed-price migration</h2>
+<div class="table-wrap"><table><thead><tr><th>Question</th><th>Why it changes the implementation</th><th>Evidence / gap</th></tr></thead><tbody>
+<tr><td>Is the discount intentionally per line, including service SKUs?</td><td>A product/category policy or quote-wide discount would need different logic and data.</td><td>Every row uses the same formula at <code>E13:E15</code>, including SERVICE-C.</td></tr>
+<tr><td>Must line amounts be rounded to cents before totals, or only for display?</td><td>Rounding order can change totals and reconciliation.</td><td>Currency display uses two decimals, but no <code>ROUND</code> appears in the formulas.</td></tr>
+<tr><td>Are zero/negative quantities and prices valid?</td><td>Returns, credits and invalid-input handling need explicit rules.</td><td>The basic input cells have no numeric validation rule in this demonstration.</td></tr>
+<tr><td>Does freight depend on destination, item class or delivery method?</td><td>Additional pricing tables and integrations may be needed.</td><td><code>B19</code> uses only net goods total and two assumptions.</td></tr>
+<tr><td>Who may edit prices and approve discounts?</td><td>Role permissions, approval states and audit history affect scope.</td><td>No roles or approval workflow are represented.</td></tr>
+<tr><td>Should historical quotes preserve the policy in force when created?</td><td>Versioned pricing and immutability may be necessary.</td><td>Editing <code>B7:B10</code> immediately changes the current quote.</td></tr>
+<tr><td>What tax, expiry and customer-specific pricing apply?</td><td>These are separate scope decisions, not features established by the workbook.</td><td>Tax, quote expiry and customer pricing data are absent.</td></tr>
+</tbody></table></div>
+
+<h2>6. Draft acceptance examples</h2>
+<p>The first four preserve observed behavior. The remaining cases require a business decision before an expected result can be approved.</p>
+<ol>
+<li><strong>Quantity boundary:</strong> a line with quantity 9 and unit price USD 80 has gross/net USD 720 and zero discount. At quantity 10, gross is USD 800, discount USD 80 and net USD 720.</li>
+<li><strong>Freight boundary:</strong> net goods exactly USD 1,000 gives freight USD 0. Net goods USD 999.99 gives freight USD 45.</li>
+<li><strong>Per-line eligibility:</strong> two lines of five units do not receive a discount merely because total units equal ten.</li>
+<li><strong>Current reconciliation:</strong> the supplied three lines give net goods USD 1,220, freight USD 0 and total USD 1,220.</li>
+<li><strong>Rounding decision:</strong> confirm approved outcomes for fractional unit prices before codifying cents precision.</li>
+<li><strong>Validation decision:</strong> decide whether negative quantities/prices are rejected or treated as returns.</li>
+<li><strong>Policy version decision:</strong> decide whether a saved quote changes when the active pricing policy is edited.</li>
+</ol>
+
+<h2>7. Coverage and verification</h2>
+<p>Reviewed all 16 formula cells in one visible worksheet, the editable assumptions and three order lines. The exported sample contains no macro project or external workbook links. Formula results and representative quantity/freight boundaries were recalculated using Artifact Tool. Every sheet was rendered and visually inspected. Native Microsoft Excel recalculation was not available for verification.</p>
+<p class="notice"><strong>What this does not establish:</strong> employee workarounds, correct business policy, production system behavior, supplier rules or the completeness of an application specification. This report gives a developer a concrete starting point and a business owner a precise decision list.</p>
+<footer>Rowan Workshop · Synthetic sample · Prepared October 21, 2026<br>Source: quotation-example.xlsx, sheet Quote. AI-assisted analysis with source verification. No customer names, results or testimonials are implied.</footer>
+</main></body></html>
