@@ -1,13 +1,14 @@
-import { cp, mkdir, rm, writeFile } from "node:fs/promises";
-
-await rm("dist", { recursive: true, force: true });
-await mkdir("dist/server", { recursive: true });
-await mkdir("dist/.openai", { recursive: true });
-await cp("index.html", "dist/index.html");
-await cp("styles.css", "dist/styles.css");
-await cp("robots.txt", "dist/robots.txt");
-await cp("repair", "dist/repair", { recursive: true });
-await cp(".openai/hosting.json", "dist/.openai/hosting.json");
+import {cp,mkdir,rm,writeFile,readFile} from 'node:fs/promises';
+import path from 'node:path';
+const root=process.cwd(),dest=path.resolve(root,'dist');
+if(dest!==path.join(root,'dist')||!dest.startsWith(root+path.sep))throw Error('Unexpected build destination');
+await rm(dest,{recursive:true,force:true});await mkdir(dest,{recursive:true});
+const files=['guides.html','sample-downloads.js','index.html','styles.css','app.js','workbook-check.html','workbook-check.js','xlsx-inventory.js','privacy.html','service-scope.html','robots.txt','sitemap.xml'];
+for(const f of files)await cp(f,path.join(dest,f));
+for(const dir of ['samples','repair','ckd','tenderfit'])await cp(dir,path.join(dest,dir),{recursive:true});
+await mkdir(path.join(dest,'.openai'),{recursive:true});await cp('.openai/hosting.json',path.join(dest,'.openai/hosting.json'));
+// Preserve the existing server entry for compatibility with the repository's earlier hosting setup.
+await mkdir(path.join(dest,'server'),{recursive:true});
 await writeFile(
   "dist/server/index.js",
   `const INDEX_PATH = "/index.html";
@@ -31,3 +32,4 @@ export default {
 };
 `
 );
+console.log(JSON.stringify({built:dest,publicFiles:files.length,samples:true}));
