@@ -42,9 +42,18 @@ export async function readZip(buffer){
 function xml(text){if(/<!DOCTYPE|<!ENTITY/i.test(text))throw Error('XML declarations with external entities are unsupported.');const d=new DOMParser().parseFromString(text,'application/xml');if(d.querySelector('parsererror'))throw Error('Malformed workbook XML.');return d;}
 const all=(node,tag)=>Array.from(node.getElementsByTagNameNS('*',tag));
 function relative(base,target){if(/^[a-z]+:/i.test(target)||target.includes('\\'))throw Error('Unsupported workbook relationship.');const parts=(target.startsWith('/')?'':base.substring(0,base.lastIndexOf('/')+1))+target.replace(/^\//,'');const result=[];for(const s of parts.split('/')){if(s==='..'){if(!result.length)throw Error('Workbook relationship escapes archive.');result.pop();}else if(s&&s!=='.')result.push(s);}return result.join('/');}
+const stripStrings=formula=>formula.replace(/"(?:[^"]|"")*"/g,'');
+const threeD=/(?:'(?:[^']|'')*:(?:[^']|'')*'|[A-Za-z_][A-Za-z0-9_.]*:[A-Za-z_][A-Za-z0-9_.]*)!\$?[A-Za-z]{1,3}\$?[1-9][0-9]*(?::\$?[A-Za-z]{1,3}\$?[1-9][0-9]*)?/g;
+export function referenceCoverageIssues(formula){
+ const clean=stripStrings(formula),issues=[];
+ if(new RegExp(threeD.source).test(clean))issues.push('Three-dimensional sheet references are not expanded.');
+ if(/(?:^|[^A-Za-z0-9_])\$?[A-Za-z]{1,3}:\$?[A-Za-z]{1,3}(?![A-Za-z0-9_])/.test(clean))issues.push('Whole-column references are not expanded.');
+ if(/(?:^|[^A-Za-z0-9_])\$?[1-9][0-9]*:\$?[1-9][0-9]*(?![A-Za-z0-9_])/.test(clean))issues.push('Whole-row references are not expanded.');
+ return issues;
+}
 export function directReferences(formula){
  // Strip strings, then extract direct A1 references. This does not resolve names or INDIRECT.
- const clean=formula.replace(/"(?:[^"]|"")*"/g,'');
+ const clean=stripStrings(formula).replace(threeD,' ');
  const re=/(?:'(?:[^']|'')+'!|(?:[A-Za-z_][A-Za-z0-9_. ]*)!)?\$?[A-Za-z]{1,3}\$?[1-9][0-9]*(?::\$?[A-Za-z]{1,3}\$?[1-9][0-9]*)?/g;
  return [...new Set([...clean.matchAll(re)].filter(m=>{const before=clean[m.index-1]??'',after=clean[m.index+m[0].length]??'';return !/[A-Za-z0-9_.]/.test(before)&&!/[A-Za-z0-9_(]/.test(after);}).map(m=>m[0]))];
 }
@@ -81,6 +90,7 @@ export async function inspectWorkbook(buffer,name='workbook.xlsx'){
    const formula=f.textContent,ref=c.getAttribute('r');
    if(!ref||formula.length>16000)throw Error('Unsupported or oversized formula record.');
    const noStrings=formula.replace(/"(?:[^"]|"")*"/g,'');
+   for(const issue of referenceCoverageIssues(formula))flags.add(issue+' Separate scope review is required.');
    const functions=[...noStrings.matchAll(/\b([A-Za-z_][A-Za-z0-9_.]*)\s*\(/g)].map(m=>m[1].toUpperCase());
    const unsupported=[...new Set(functions.filter(x=>!supported.has(x)))];
    if(unsupported.length)flags.add('Formula functions need separate review: '+unsupported.join(', ')+'.');
@@ -93,5 +103,5 @@ export async function inspectWorkbook(buffer,name='workbook.xlsx'){
  }
  if(formulas.length>2000)flags.add('More than 2,000 formula cells: outside the standard service scope.');
  if(names.length)flags.add('Defined names are listed in the download; their semantics and dependency expansion need review.');
- return {format:'rowan-workbook-inventory-v1',file:name,generatedAt:new Date().toISOString(),complete:sheets.every(s=>s.inspected),sheets,formulas,definedNames:names,flags:[...flags],standardScopeCandidate:flags.size===0,limitations:['No formula recalculation or correctness verification.','No business-policy interpretation.','Direct A1 references only; names, dynamic references and tables are not expanded.','Cached values are file contents, not current verified calculations.','This report is not the paid migration blueprint.']};
+ return {format:'rowan-workbook-inventory-v1',file:name,generatedAt:new Date().toISOString(),complete:sheets.every(s=>s.inspected),sheets,formulas,definedNames:names,flags:[...flags],standardScopeCandidate:flags.size===0,limitations:['No formula recalculation or correctness verification.','No business-policy interpretation.','Direct A1 references only; names, dynamic references, tables, whole rows/columns and 3D sheet references are not expanded.','Cached values are file contents, not current verified calculations.','This report is not the paid migration blueprint.']};
 }
