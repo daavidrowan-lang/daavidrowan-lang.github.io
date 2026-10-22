@@ -1,5 +1,5 @@
 import {sampleBuffer} from './sample-downloads.js';
-import {inspectWorkbook} from './xlsx-inventory.js';
+import {inspectWorkbook} from './xlsx-inventory.js?v=20261022-r5';
 const $=s=>document.querySelector(s),fileInput=$('#workbook-file'),status=$('#check-status');let report=null,busy=false,generation=0;
 const buttons=[$('#analyze'),$('#load-example')];
 function reset(){generation++;report=null;fileInput.value='';$('#results').hidden=true;$('#sheets-body').replaceChildren();$('#formulas-body').replaceChildren();$('#scope-flags').replaceChildren();$('#result-file').textContent='';status.textContent='File and results cleared from this page. Your downloaded copies, if any, remain on your device.';}
